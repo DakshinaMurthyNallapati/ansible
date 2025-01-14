@@ -1,5 +1,5 @@
 - name: PING
   hosts: web
   tasks: #tasks=module=collection
-  - name: ping the server
+  - name: ping the mysql and anisble servers
     ansible.builtin.ping:
