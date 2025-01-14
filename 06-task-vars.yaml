@@ -7,5 +7,11 @@
     ENGINEER: "Dakshina Murthy Nallapati"
   tasks:
   - name: print the varible
+    vars: # task variables
+      COURSE: "Ansible"
+    ansible.builtin.debug:
+      msg: "Course is {{ COURSE }} , durtion is {{ DURATION }}, Engineer is {{ ENGINEER }}"
+
+  - name: print the varible
     ansible.builtin.debug:
       msg: "Course is {{ COURSE }} , durtion is {{ DURATION }}, Engineer is {{ ENGINEER }}"
