@@ -2,8 +2,8 @@
 - name: variables prefrence
   hosts: local
   connection: local
-  vars: #play level variable
-    GREET: "PLAY"
+  # vars: #play level variable
+  #   GREET: "PLAY"
   # vars_files:
   #   - course.yaml
   # vars_prompt:
@@ -17,8 +17,10 @@
     ansible.builtin.debug:
       msg: "Hello from {{ GREET }}"
 
-      #1. Command line or args
+      #1. Command line or args level
       #2. Task level
       #3. File level
       #4. Prompt level
+      #5. Play Level
+
 
