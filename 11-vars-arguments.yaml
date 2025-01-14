@@ -1,3 +1,4 @@
+# playbook where variables needs to provide at command line
 - name: variables from prompt
   hosts: local
   connection: local
