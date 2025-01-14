@@ -11,7 +11,7 @@
       prompt: Enter the value
       private: false
   tasks:
-  - name: print course information
+  - name: print the variable
       vars:
         GREET: "TASK"
     ansible.builtin.debug:
