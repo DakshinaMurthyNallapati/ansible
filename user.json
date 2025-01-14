@@ -1,0 +1,22 @@
+{
+	"username": "DakshinaMurthyNallapati",
+	"password": "admin123",
+    "addressess":
+    [
+
+       {
+        "type": "permanent",
+        "doorno": 12171,
+        "street": "MLR Colony",
+        "city": "Dammaiguda"
+       },
+
+       {
+        "type": "current",
+        "doorno": 12345,
+        "street": "Famous street",
+        "City": "Ireland"
+       }
+    ]
+
+}

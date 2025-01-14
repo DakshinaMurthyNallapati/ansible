@@ -1,0 +1,27 @@
+- name: DakshinaMurthy
+  email: dakshinamurthynallapati@gmail.com
+  addresses:
+
+    - type: perm
+      doorno: 12345
+      street: MLR
+      city: Hyderabad
+    
+    - type: current
+      doorno: 12345
+      street: MLR
+      city: Dammaiguda
+
+- name: DakshinaMurthy
+  email: dakshinamurthynallapati@gmail.com
+  addresses:
+
+    - type: perm
+      doorno: 12345
+      street: MLR
+      city: Hyderabad
+    
+    - type: current
+      doorno: 12345
+      street: MLR
+      city: Dammaiguda
