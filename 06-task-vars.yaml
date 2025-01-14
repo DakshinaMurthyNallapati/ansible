@@ -7,7 +7,8 @@
     ENGINEER: "Dakshina Murthy Nallapati"
   tasks:
   - name: print the varible
-    vars: # task variables
+    vars: # task level variables, accessible with in the tasks only. 
+            #Task variables can override the play level variables
       COURSE: "Ansible"
     ansible.builtin.debug:
       msg: "Course is {{ COURSE }} , durtion is {{ DURATION }}, Engineer is {{ ENGINEER }}"
