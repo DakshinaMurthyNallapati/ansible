@@ -1,4 +1,5 @@
 - name: create ec2 and r53 records
+  connection: local
   hosts: local
   vars:
     subnet_id: subnet-0b5cc5cd5e95d8f27
