@@ -29,9 +29,9 @@
       loop: "{{ instances }}"
       register: ec2_info
     
-    - name: print ec2_info
-      ansible.builtin.debug:
-        msg: "{{ ec2_info }}"
+    # - name: print ec2_info
+    #   ansible.builtin.debug:
+    #     msg: "{{ ec2_info }}"
 
     - name: print private IP addresses
       ansible.builtin.debug:
@@ -45,7 +45,7 @@
         record: "{{ item.item }}.{{ zone }}"
         type: A
         ttl: 1
-        value: "{{ item.instances[0].private.ip.address }}"
+        value: "{{ item.instances[0].private_ip_address }}"
         wait: true
         overwrite: true
       loop: "{{ ec2_info_results }}"
@@ -57,7 +57,7 @@
         record: "{{ zone }}"
         type: A
         ttl: 1
-        value: "{{item.instances[0].private.ip.address }}"
+        value: "{{item.instances[0].private_ip_address }}"
         wait: true
         overwrite: true
       loop: "{{ ec2_info_results }}"
