@@ -1,8 +1,14 @@
 - name: install nginx software
   hosts: all
   become: yes
+  serial: 2
   tasks:
     - name: nginx software installation
       ansible.builtin.package:
         name: nginx
         state: present
+    - name: run nginx
+      anisble.builtin.service:
+        name: nginx
+        state: started
+        
