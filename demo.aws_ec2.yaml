@@ -8,9 +8,9 @@ filters:
   instance-state-name: running
 
 hostname: 
-  - private-ip-address
+  - private-ip-addresses
 
 compose:
 # This sets the 'ansible_host' variable to connect with IP address without changing the hostname.
-  ansible_host: private_ip_address
+  ansible_host: private_ip_addresses
 
