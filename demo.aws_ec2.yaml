@@ -7,10 +7,10 @@ filters:
   tag:Name: nginx
   instance-state-name: running
 
-hostname: 
-  - private-ip-addresses
+hostnames: 
+  - private-ip-address
 
 compose:
 # This sets the 'ansible_host' variable to connect with IP address without changing the hostname.
-  ansible_host: private_ip_addresses
+  ansible_host: private_ip_address
 
