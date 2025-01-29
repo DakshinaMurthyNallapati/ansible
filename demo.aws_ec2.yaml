@@ -12,5 +12,5 @@ hostname:
 
 compose:
 # This sets the 'ansible_host' variable to connect with IP address without changing the hostname.
-  ansible_host: private-ip-address
+  ansible_host: private_ip_address
 
